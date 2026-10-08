@@ -83,7 +83,7 @@ Route::delete('/students/{id}', function ($id) {
 });
 
 
-// ==================== COURSE ROUTES ====================
+//COURSE ROUTES 
 
 // List all courses
 Route::get('/courses', function () {
@@ -162,4 +162,4 @@ Route::delete('/courses/{id}', function ($id) {
 Route::get('/courses', function () {
     $courses = Course::all();
     return view('course.list', ['courses' => $courses]);
-})->name('courses.index');   // 👈 add this
+})->name('courses.index');   
