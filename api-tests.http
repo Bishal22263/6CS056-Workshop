@@ -1,0 +1,34 @@
+### List students
+GET http://127.0.0.1:8000/api/students
+Accept: application/json
+
+
+### Create student
+POST http://127.0.0.1:8000/api/students
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "bishal",
+  "email": "dhital@example.com",
+  "phone": "9800000000",
+  "address": "Lalitpur",
+  "date_of_birth": "2004-05-15"
+}
+
+### Show student
+GET http://127.0.0.1:8000/api/students/
+Accept: application/json
+
+### Update student
+PUT http://127.0.0.1:8000/api/students/6
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Updated bishal",
+  "email": "updated1@gmail.com",
+  "phone": "9811111111",
+  "address": "Bhaktapur",
+  "date_of_birth": "2004-05-15"
+}
